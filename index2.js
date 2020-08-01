@@ -2,7 +2,6 @@ function onJSONget(data)
 {
     $("#output").html('<img src="" class="img-fluid" alt="" id="profilePic">');
     $("#profilePic").attr("src", data.graphql.user.profile_pic_url_hd);
-    $("#profilePic").attr("download", "profile.jpg");
 
     $("#search").attr("disabled", false);
     $("#search").html("Search");
